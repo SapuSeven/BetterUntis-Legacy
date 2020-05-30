@@ -342,7 +342,7 @@ public class ActivityPreferences extends com.sapuseven.untis.activity.appcompat.
 			final SharedPreferences prefs = getActivity()
 					.getSharedPreferences("login_data", MODE_PRIVATE);
 			Preference prefKey = findPreference("preference_account_access_key");
-			prefKey.setSummary(prefs.getString("key", "UNKNOWN"));
+			prefKey.setSummary("************");
 			prefKey.setOnPreferenceClickListener(preference -> {
 				ClipboardManager clipboard = (ClipboardManager) getActivity()
 						.getSystemService(Context.CLIPBOARD_SERVICE);
